@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    .contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .menu a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+    
+    .menu a:hover {
+        color: #007bff;
+    }
+    
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .s2-texto {
+        max-width: 800px;
+    }
+    
+    .s2-texto h1 {
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        color: #333;
+    }
+    
+    .s2-texto p {
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    .s2-img {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    
+    .contenido {
+        flex: 1;
+        margin: 0 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .contenidoImg img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .contenidoTexto {
+        padding: 20px;
+    }
+    
+    .contenidoTexto h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .contenidoTexto p {
+        color: #666;
+        line-height: 1.5;
+    }
+    
+    .contenidoTexto a {
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #007bff;
+        transition: color 0.3s ease;
+    }
+    
+    .contenidoTexto a:hover {
+        color: #0056b3;
+    }
+    
+    .section3 {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+    }
+    
+    .s3-contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .s3-logo img {
+        width: 60px;
+    }
+    
+    .s3-texto h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    
+    .s3-texto p {
+        margin-bottom: 5px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #ccc;
+    }
+    
+    .footer a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #fff;
+    }
+    
+
+/* estilo de pagina contacto */
+
+body1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    min-height: 100vh;
+}
+
+.form{
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+
+}
+
+.form-title{
+    font-size: 2em;
+    margin-bottom: 5em;
+
+}
+
+.form-paragraph{
+    font-weight: 300;
+}
+
+.form-link{
+    font-weight: 400;
+    color: black;
+}
+
+.form-container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+
+}
+
+.form-group{
+    position: relative;
+    --color: #5757577e;
+
+}
+
+.form-input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: "Roboto", sans-serif;
+
+}
+/* animaciones */
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2
+}
+/* animaciones/ */
+
+.form-label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+
+}
+
+.form-submit{
+    background: #3866f2;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+
+}
+
+@media(max-width: 425px) {
+    .form-title{
+        font-size: 1.8rem;
+    }
+}
+/* estilo de pagina contacto/ */
+
+
+
+
